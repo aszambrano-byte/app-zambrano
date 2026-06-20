@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/13"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.veterinario.VeterinarioController"
+            styleClass="root-pane">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" styleClass="header">
+            <children>
+                <Label text="Registro de Paciente Veterinario" styleClass="header-title"/>
+            </children>
+            <padding>
+                <Insets top="20.0" right="35.0" bottom="20.0" left="20.0"/>
+            </padding>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="28.0" styleClass="form-container">
+            <children>
+                <Label text="Datos de la mascota" styleClass="section-title"/>
+
+                <HBox spacing="55.0">
+                    <children>
+                        <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Nombre de la mascota" styleClass="field-label"/>
+                                <TextField fx:id="txtNombreMascota"/>
+                            </children>
+                        </VBox>
+                        <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Tipo de mascota" styleClass="field-label"/>
+                                <TextField fx:id="txtTipoMascota"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox spacing="55.0">
+                    <children>
+                        <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Raza" styleClass="field-label"/>
+                                <TextField fx:id="txtRaza"/>
+                            </children>
+                        </VBox>
+                        <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Edad" styleClass="field-label"/>
+                                <TextField fx:id="txtEdad"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox spacing="55.0">
+                    <children>
+                        <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Nombre del dueño" styleClass="field-label"/>
+                                <TextField fx:id="txtNombreDueno"/>
+                            </children>
+                        </VBox>
+                        <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Motivo de la visita" styleClass="field-label"/>
+                                <TextField fx:id="txtMotivoVisita"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox spacing="30.0" alignment="CENTER_RIGHT" styleClass="button-bar">
+                    <children>
+                        <Button text="Registrar"
+                                onAction="#registrar"
+                                styleClass="register-button"/>
+
+                        <Button text="Limpiar"
+                                onAction="#limpiar"
+                                styleClass="clear-button"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="42.0" right="80.0" bottom="42.0" left="80.0" />
+            </padding>
+        </VBox>
+    </center>
+
+</BorderPane>
