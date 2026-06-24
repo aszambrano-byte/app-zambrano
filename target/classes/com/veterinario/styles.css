@@ -1,0 +1,93 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+
+.root-pane {
+    -fx-background-color: #f7f9fa;
+    -fx-border-color: #9cb0b0;
+    -fx-border-width: 2;
+}
+
+
+.header {
+    -fx-background-color: #145858;
+}
+
+
+.header-title {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+
+.form-container {
+    -fx-background-color: #fbfcfc;
+}
+
+
+.section-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #145858;
+}
+
+
+.field-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1c4444;
+}
+
+
+.text-field {
+    -fx-pref-height: 36px;
+    -fx-pref-width: 390px;
+    -fx-background-color: white;
+    -fx-border-color: #b8c8c8;
+    -fx-border-width: 2;
+    -fx-font-size: 14px;
+    -fx-padding: 6 10;
+}
+.text-field:focused {
+    -fx-border-color: #1a7373;
+}
+
+
+.button-bar {
+    -fx-padding: 12 0 0 0;
+}
+
+
+.button {
+    -fx-min-width: 155px;
+    -fx-min-height: 46px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-border-color: #1c3838;
+    -fx-border-width: 2;
+    -fx-cursor: hand;
+}
+
+
+.register-button {
+    -fx-background-color: #145858;
+}
+
+
+.register-button:hover {
+    -fx-background-color: #0f4444;
+}
+
+
+.clear-button {
+    -fx-background-color: #8c9696;
+}
+
+
+.clear-button:hover {
+    -fx-background-color: #747d7d;
+}
